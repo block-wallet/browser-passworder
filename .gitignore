@@ -1,5 +1,4 @@
 node_modules/
-dist/
 
 #ignoring test/bundle.js
 test/bundle.js
