@@ -147,7 +147,7 @@ exports.importKey = importKey;
  * @returns A key string.
  */
 async function exportKey(key) {
-    const exportedKey = await window.crypto.subtle.exportKey(EXPORT_FORMAT, key);
+    const exportedKey = await global.crypto.subtle.exportKey(EXPORT_FORMAT, key);
     return JSON.stringify(exportedKey);
 }
 exports.exportKey = exportKey;
